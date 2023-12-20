@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/imgCount"
+            android:layout_gravity="center_vertical|start"
+            android:layout_width="20dp"
+            android:textSize="25sp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="1"
+            android:textStyle="bold"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_margin="12dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtAliciAdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="sinemmmmm"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_toRightOf="@+id/ly" />
+
+            <TextView
+                android:id="@+id/txtTakipNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/ly"
+                android:layout_below="@+id/txtAliciAdi" />
+
+            <TextView
+                android:id="@+id/txtZimmetAlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/ly"
+                android:layout_below="@+id/txtTakipNo" />
+
+            <TextView
+                android:id="@+id/txtAdres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/ly"
+                android:layout_below="@+id/txtZimmetAlan" />
+
+            <TextView
+                android:id="@+id/txtHizmetNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/ly"
+                android:layout_below="@+id/txtRef2" />
+
+            <TextView
+                android:id="@+id/txtGonAdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/ly"
+                android:layout_below="@+id/txtHizmetNo" />
+            <TextView
+                android:id="@+id/txtDesi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/ly"
+                android:layout_below="@+id/txtGonAdi" />
+            <TextView
+                android:id="@+id/txtNot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@+id/txtDesi"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/txtmTakipNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@+id/txtNot"
+                android:layout_alignParentRight="true"/>
+            <TextView
+                android:id="@+id/txtToplamParca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/ly"
+                android:layout_below="@+id/txtmTakipNo" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgStatus"
+            android:background="@color/yellow"
+            android:layout_gravity="center_vertical|end"
+            android:layout_width="50dp"
+            android:src="@drawable/ic_right_arrow"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+<me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/zXingScanner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/buttonsLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="1dp">
+
+
+
+    </me.dm7.barcodescanner.zxing.ZXingScannerView>
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spinner_musterilistesi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        app:hintText="Müşteri seçiniz"
+        app:ms_hint="Müşteri seçiniz"
+        app:ms_hint_color="@color/gray"
+        app:ms_text_color="@color/gray" />
+
+    <TextView
+        android:id="@+id/txtOkutulanBarkodSayisi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:text="0"
+        android:textAlignment="inherit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="86sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/centerHorizont"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtTeslimAlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="Teslim Alan" />
+
+        <EditText
+            android:id="@+id/edtMnlGonderiNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="Gönderi No" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/centerHorizont"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/buttonsLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/centerHorizont"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="@color/yellow"
+            android:onClick="btnManuelOkut"
+            android:text="Tamam" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

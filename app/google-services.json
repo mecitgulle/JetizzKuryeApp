@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "455113216028",
+    "firebase_url": "https://jetizz-kurye.firebaseio.com",
+    "project_id": "jetizz-kurye",
+    "storage_bucket": "jetizz-kurye.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455113216028:android:7472de345065a4a778cfd9",
+        "android_client_info": {
+          "package_name": "com.arasholding.jetizzkuryeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455113216028-781l4ushtdvfvkv0fnkdivsra9mcg44p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arasholding.jetizzkuryeapp",
+            "certificate_hash": "b607a2db7f487e6f85042010ed8f27c38002af71"
+          }
+        },
+        {
+          "client_id": "455113216028-j8epmqln6afb8ve9h3bcrav2etkia3d7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaokeX2E59P_pUX5lkVUXsgFr5bBsbdR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455113216028-j8epmqln6afb8ve9h3bcrav2etkia3d7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

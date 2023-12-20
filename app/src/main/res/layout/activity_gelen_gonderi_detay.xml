@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.GelenGonderiDetayActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Gelen Gönderi Detay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gönderi Bilgisi"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTakipNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TakipNo"
+                android:layout_marginBottom="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtMTakipNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MTakipNo"
+                android:layout_marginBottom="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtDeliveryEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Olası Teslim"
+                android:layout_marginBottom="5dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gönderici Bilgileri"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtGondericiAdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GondericiAdi"
+                android:layout_marginBottom="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtGondericiAdres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GondericiAdresi"
+                android:layout_marginBottom="5dp"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtGonderenTelefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GonderenTelefon"
+                android:layout_marginBottom="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alıcı Bilgileri"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtAliciAdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="AlıcıAdı"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtAliciAdresi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AlıcıAdresi"
+                android:layout_marginBottom="5dp"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtAliciTelefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AlıcıTelefon"
+                android:layout_marginBottom="5dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOnIadeIslemi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ön İade İşlemi"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinner_oniadelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:ms_hint="Ön İade Nedeni Seçiniz"
+                app:ms_hint_color="@color/gray"
+                app:ms_text_color="@color/gray" />
+<!--            <EditText-->
+<!--                android:id="@+id/onIadeAciklama"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Açıklama"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
+
+            <com.manojbhadane.QButton
+                android:id="@+id/btnOnIade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/white"
+                app:qb_backgroundColor="@color/colorPrimary"
+                app:qb_radius="100"
+                app:qb_strokeColor="@color/colorPrimary"
+                app:qb_strokeWidth="2"
+                android:text="Ön İade Yap" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.manojbhadane.QButton
+        android:id="@+id/btnzimmetAl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Zimmete Al"
+        android:textColor="@color/black"
+        app:qb_backgroundColor="@color/yellow"
+        app:qb_radius="100"
+        app:qb_strokeColor="@color/light_yellow"
+        app:qb_strokeWidth="2" />
+</LinearLayout>
+</ScrollView>

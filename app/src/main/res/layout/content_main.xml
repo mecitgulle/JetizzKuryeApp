@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+    <!--    <androidx.fragment.app.FragmentContainerView-->
+    <!--        android:id="@+id/nav_host_fragment"-->
+    <!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:defaultNavHost="true"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:navGraph="@navigation/mobile_navigation" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:columnOrderPreserved="false"
+            android:rowCount="5">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_yukleme"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:onClick="btnMerkezdenGelen"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_trolley_cart" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_merkezdengelen"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_yukleme2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnSubeYukleme">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_delivery_truck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_subeyukleme"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/zimmet"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnZimmetAl">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_delivery_man" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_zimmetealma"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/subeIndirme"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnSubeIndirme">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_pack" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_sube_indirme"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hatYukleme"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnCikisTMIndirme">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_packages" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_TM_indirme"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/hatIndirme"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="12dp"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:foreground="?android:attr/selectableItemBackground"-->
+<!--                app:cardCornerRadius="12dp"-->
+<!--                app:cardElevation="6dp"-->
+<!--                android:onClick="btnHatIndirme">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="8dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:src="@drawable/ic_conveyor_down" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:gravity="center_horizontal"-->
+<!--                        android:text="@string/menu_hat_indirme"-->
+<!--                        android:textColor="#656565"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gelenGonderiler"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnGelenGonderiler">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_cargo_box" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_gelen_gonderiler"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/zimmetlist"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnzimmetListesi">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_files_and_folders" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_zimmetlistesi"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/teslim"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnIslemler">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_courier" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_teslimiade"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/desi"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnDesiGuncelle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_scale" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_desi"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/barcode"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnBarkodOkut">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_barcode_scanner" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_barkod"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dagitimsubesevk"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnDagitimSubeSevk">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_conveyor_down" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_dagitimsubesevk"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/trendyol"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="12dp"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:foreground="?android:attr/selectableItemBackground"-->
+<!--                app:cardCornerRadius="12dp"-->
+<!--                app:cardElevation="6dp"-->
+<!--                android:onClick="btnTrendyol">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="8dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:src="@drawable/ic_cargo" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:gravity="center_horizontal"-->
+<!--                        android:text="@string/menu_trendyol"-->
+<!--                        android:textColor="#656565"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/mecit_calisma"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="12dp"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:foreground="?android:attr/selectableItemBackground"-->
+<!--                app:cardCornerRadius="12dp"-->
+<!--                app:cardElevation="6dp"-->
+<!--                android:onClick="btnMecitdeneme">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="8dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:src="@drawable/mecit_calisma" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:gravity="center_horizontal"-->
+<!--                        android:text="@string/menu_mecit"-->
+<!--                        android:textColor="#656565"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/mecit_calisma_list"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:layout_margin="12dp"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:foreground="?android:attr/selectableItemBackground"-->
+<!--                app:cardCornerRadius="12dp"-->
+<!--                app:cardElevation="6dp"-->
+<!--                android:onClick="btnMecitdenemelist">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="8dp">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:src="@drawable/mecit_calisma" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:gravity="center_horizontal"-->
+<!--                        android:text="@string/menu_mecit2"-->
+<!--                        android:textColor="#656565"-->
+<!--                        android:textSize="14sp" />-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/n11_barkod"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnN11barkod">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_ladybug" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_n11"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/iade_barkod"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnIadebarkod">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic__iadealim" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_iade"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/iade_not_birakildi"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:onClick="btnNotbirakildi">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_not_birakildi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_notbirakildi"
+                        android:textColor="#656565"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

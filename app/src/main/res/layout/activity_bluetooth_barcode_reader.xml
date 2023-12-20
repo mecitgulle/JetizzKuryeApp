@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context=".ui.BluetoothBarcodeReaderActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spinner_musterilist"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/label"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:background="@color/light_gray"
+        app:hintText="Müşteri seçiniz"
+        app:ms_hint_color="@color/gray"
+        app:ms_text_color="@color/gray" />
+    <EditText
+        android:id="@+id/edtBarcode"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/spinner_musterilist"
+        android:hint="Barkod"
+        android:visibility="gone"
+        android:keepScreenOn="true"
+        android:inputType="text"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:id="@+id/checkBarcodePrinter"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/edtBarcode"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="Barkod Yazdır"
+        android:textSize="25sp"/>
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spinner_subelist"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/label"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:hintText="Şube seçiniz"
+        app:ms_hint="Şube seçiniz"
+        app:ms_hint_color="@color/gray"
+        app:ms_text_color="@color/gray" />
+    <!--<EditText-->
+    <!--android:id="@+id/entry"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/label"-->
+    <!--android:background="@android:drawable/editbox_background" />-->
+    <CheckBox
+        android:id="@+id/checkfarkliacente"
+        android:layout_below="@+id/spinner_subelist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:text="Farklı Acente"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edtBarcode"
+        android:layout_marginTop="20dp"
+        android:text="Bağlan"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        />
+    <!--<Button-->
+    <!--android:id="@+id/open"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_below="@id/entry"-->
+    <!--style="@style/Button.Primary"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:text="Bağlan" />-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/send"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignTop="@id/open"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_toLeftOf="@id/open"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Send" />&ndash;&gt;-->
+
+    <!--<Button-->
+    <!--android:id="@+id/close"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:layout_alignTop="@id/open"-->
+    <!--android:layout_toLeftOf="@id/open"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:background="@drawable/button_primary_bg"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:text="Kapat" />-->
+    <LinearLayout
+        android:layout_below="@+id/open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edtDesiTM"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/open"
+            android:hint="Desi"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="80sp" />
+        <TextView
+            android:id="@+id/txtCount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/open"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="80sp"
+            android:text="0" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

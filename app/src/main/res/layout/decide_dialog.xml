@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/statusSpanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--        <com.rey.material.widget.CheckBox-->
+        <!--            android:id="@+id/chkRemember"-->
+        <!--            style="@style/Material.Drawable.CheckBox"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:gravity="center_vertical"-->
+        <!--            android:text="Hatırla"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            app:cbd_strokeColor="@android:color/black"-->
+        <!--            app:cbd_tickColor="@color/btnBlue1" />-->
+        <!--        <CheckBox-->
+        <!--            android:id="@+id/chkRemember"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Hatırla"-->
+        <!--            android:layout_marginTop="8dp"/>-->
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

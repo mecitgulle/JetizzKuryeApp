@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Kurye Üzerindeki Gönderiler" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <com.manojbhadane.QButton
+            android:id="@+id/btnHubTopluTeslim"
+            android:layout_width="wrap_content"
+            android:onClick="TopluTeslimatKapat"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            app:qb_backgroundColor="@color/colorPrimary"
+            app:qb_radius="20"
+            app:qb_strokeColor="@color/colorPrimary"
+            app:qb_strokeWidth="2"
+            android:text=" Hub Toplu Teslim " />
+        <EditText
+            android:id="@+id/txtValues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Takip No veya Alıcı Adı" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerGonderiList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+</LinearLayout>

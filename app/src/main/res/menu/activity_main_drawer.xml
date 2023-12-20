@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_aeroplane"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_subeyukleme"
+            android:icon="@drawable/ic_delivery_truck"
+            android:iconTint="@color/white"
+            android:title="@string/menu_subeyukleme" />
+        <item
+            android:id="@+id/nav_merkezdengelen"
+            android:icon="@drawable/ic_trolley_cart"
+            android:title="@string/menu_merkezdengelen" />
+        <item
+            android:id="@+id/nav_zimmetealma"
+            android:icon="@drawable/ic_delivery_man"
+            android:title="@string/menu_zimmetealma" />
+        <item
+            android:id="@+id/nav_TM_Sevk"
+            android:icon="@drawable/ic_tm"
+            android:title="@string/menu_TM_Sevk" />
+        <item
+            android:id="@+id/nav_TM_Indirme"
+            android:icon="@drawable/ic_cargo"
+            android:title="@string/menu_TM_indirme" />
+<!--        <item-->
+<!--            android:id="@+id/nav_dagitim_sube_sevk"-->
+<!--            android:icon="@drawable/ic_delivery"-->
+<!--            android:title="@string/menu_dagitim_sube_sevk" />-->
+        <item
+            android:id="@+id/nav_zimmet_listesi"
+            android:icon="@drawable/ic_packages"
+            android:title="@string/menu_zimmetlistesi" />
+        <item
+            android:id="@+id/nav_teslim_iade"
+            android:icon="@drawable/ic_courier"
+            android:title="@string/menu_teslimiade" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_tools" />
+
+        <item android:title="Oturum">
+            <menu>
+                <item
+                    android:id="@+id/nav_session"
+                    android:icon="@drawable/ic_person_black_24dp"
+                    android:title="Oturumu Kapat" />
+                <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="@string/menu_send" />-->
+            </menu>
+        </item>
+    </group>
+
+<!--    <item android:title="Communicate">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/nav_share"-->
+<!--                android:icon="@drawable/ic_menu_share"-->
+<!--                android:title="@string/menu_share" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_send"-->
+<!--                android:icon="@drawable/ic_menu_send"-->
+<!--                android:title="@string/menu_send" />-->
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>

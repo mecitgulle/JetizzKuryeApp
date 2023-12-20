@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activityMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="80dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="22dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:src="@mipmap/ic_jetizzlogo"
+            android:text="text"
+            android:textAllCaps="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:text="SMS bekleniyor" />
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/edtDogrulamaKodu"
+                android:layout_alignLeft="@+id/edtDogrulamaKodu"
+                android:layout_alignRight="@+id/edtDogrulamaKodu"
+                android:layout_alignStart="@+id/edtDogrulamaKodu"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="14dp"
+                android:max="60"
+                android:progress="60" />
+
+
+            <EditText
+                android:id="@+id/edtDogrulamaKodu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/btnDogrula"
+                android:layout_alignStart="@+id/btnDogrula"
+                android:layout_below="@+id/txtCounter"
+                android:layout_marginTop="42dp"
+                android:gravity="center"
+                android:hint="Doğrulama Kodu"
+                android:inputType="number" />
+
+
+            <com.manojbhadane.QButton
+                android:id="@+id/btn_dogrula"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Doğrula"
+                android:textColor="@color/black"
+                app:qb_backgroundColor="@color/yellow"
+                app:qb_radius="50"
+                app:qb_strokeColor="@color/yellow"
+                app:qb_strokeWidth="1"/>
+            <!--            <Button-->
+            <!--                android:id="@+id/btn_server_login"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_margin="15dp"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:text="text"-->
+            <!--                android:textSize="18dp" />-->
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout><!--<?xml version="1.0" encoding="utf-8"?>-->
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical">-->
+
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btnDogrula"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/edtDogrulamaKodu"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="31dp"-->
+<!--        android:background="@drawable/buton_selector"-->
+<!--        android:text="Doğrula" />-->
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtCounter"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignEnd="@+id/progressBar"-->
+<!--        android:layout_alignLeft="@+id/edtDogrulamaKodu"-->
+<!--        android:layout_alignRight="@+id/progressBar"-->
+<!--        android:layout_alignStart="@+id/edtDogrulamaKodu"-->
+<!--        android:layout_below="@+id/progressBar"-->
+<!--        android:gravity="center_horizontal" />-->
+
+
+
+<!--</RelativeLayout>-->

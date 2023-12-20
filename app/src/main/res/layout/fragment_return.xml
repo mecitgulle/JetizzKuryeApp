@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.ReturnFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:ms_background_color="@color/light_gray"
+            app:ms_hint="İade nedeni seçiniz"
+            app:ms_hint_color="@color/gray"
+            app:ms_text_color="@color/gray" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textIadeKanit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextLayout"
+            android:hint="Kanıt Açıklaması">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtIadeKanit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.manojbhadane.QButton
+            android:id="@+id/btnIadeGir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="İade Gir"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            app:qb_radius="100"
+            app:qb_strokeColor="@color/colorPrimaryDark"
+            app:qb_strokeWidth="5" />
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

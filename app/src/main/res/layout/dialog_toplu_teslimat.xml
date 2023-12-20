@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/ky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teslim Tipi"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner_deliverable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:ms_background_color="@color/light_gray"
+            app:ms_hint="Teslim tipi seçiniz"
+            app:ms_hint_color="@color/gray"
+            app:ms_text_color="@color/gray" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lytTeslimAlanAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teslim Alan Adı"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtTeslimAlanAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teslim Alan Adı"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytTeslimAlanSoyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teslim Alan Soyadı"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtTeslimAlanSoyadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teslim Alan Soyadı"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytTeslimAlanKimlikNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kimlik No"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtKimlikNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kimlik No"
+            android:inputType="number"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kanıt"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edtAciklama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kanıt"
+        android:inputType="textMultiLine"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

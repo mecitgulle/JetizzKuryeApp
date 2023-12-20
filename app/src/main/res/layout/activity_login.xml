@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/activityMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="80dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="22dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:src="@mipmap/ic_jetizzlogo"
+            android:text="text"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel"
+                android:textColorHint="@color/gray"
+                android:hint="Kullanıcı Adı"
+                style= "@style/TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|top"
+                    android:drawablePadding="16dp"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Şifre"
+                android:textColorHint="@color/gray"
+                style= "@style/TextInputLayout"
+                app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+                app:passwordToggleEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|top"
+                    android:drawablePadding="16dp"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.manojbhadane.QButton
+                android:id="@+id/btn_login"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Giriş"
+                android:textColor="@color/black"
+                app:qb_backgroundColor="@color/yellow"
+                app:qb_radius="50"
+                app:qb_strokeColor="@color/yellow"
+                app:qb_strokeWidth="1"/>
+<!--            <Button-->
+<!--                android:id="@+id/btn_server_login"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_margin="15dp"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="text"-->
+<!--                android:textSize="18dp" />-->
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

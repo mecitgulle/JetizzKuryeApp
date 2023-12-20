@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".ui.MusteriIadeBluetoothActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spinner_musterilistesi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/light_gray"
+        app:hintText="Müşteri seçiniz"
+        app:ms_hint_color="@color/gray"
+        app:ms_text_color="@color/gray" />
+    <Button
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edtBarcode"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:text="Bağlan"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/open"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtOkutulanBarkodSayisi"
+            android:layout_width="0dp"
+            android:layout_marginTop="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/open"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textSize="80sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtTeslimAlan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Teslim Alan" />
+
+
+</RelativeLayout>

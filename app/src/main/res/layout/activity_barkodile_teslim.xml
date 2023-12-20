@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/zXingScanner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/buttonsLayout"
+        android:layout_alignParentTop="true">
+
+    </me.dm7.barcodescanner.zxing.ZXingScannerView>
+
+    <ImageView
+        android:id="@+id/imgBtnFlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:onClick="imgBtnFlashClick" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonsLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/centerHorizont"
+        android:orientation="vertical">
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtMnlGonderiNo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="4dp"-->
+<!--            android:hint="Gönderi No" />-->
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_margin="4dp"-->
+<!--            android:background="@color/yellow"-->
+<!--            android:onClick="btnManuelOkut"-->
+<!--            android:text="Tamam" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/txtOkutulanBarkodSayisi"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="0"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textSize="36sp"-->
+        <!--            android:textStyle="bold" />-->
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/centerHorizont"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/buttonsLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/centerHorizont"
+        android:orientation="vertical">
+
+    </RelativeLayout>
+</RelativeLayout>
